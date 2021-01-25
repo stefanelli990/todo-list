@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div class="container">
+    <h1>Todo List</h1>
+
+    <ul class="todo-list">
+        <li class="todo-list-item"><span class="todo-text">e.g. Make a pizza</span><span class="todo-icons"><i class="fas fa-check check"></i>
+            <i class="far fa-trash-alt delete"></i></span>
+        </li>
+        <li class="todo-list-item"><span class="todo-text">e. g. Go to school</span><span class="todo-icons"><i class="fas fa-check check"></i>
+            <i class="far fa-trash-alt delete"></i></span>
+        </li>
+        <li class="todo-list-item"><span class="todo-text">e. g. Take out trash</span><span class="todo-icons"><i class="fas fa-check check"></i>
+            <i class="far fa-trash-alt delete"></i></span>
+        </li>
+    </ul>
+    <form class="add-todo">
+        <label>Add a new todo...</label>
+        <div class="input">
+            <input type="text" name="add" autocomplete="off">
+            <button class="add"><i class="fas fa-plus-circle"></i></button>
+        </div>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  margin: auto;
+  color: #fff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("bg-image.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bg-image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1 {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 2.5rem;
+}
+
+.container {
+  padding: 2rem;
+  width: 700px;
+  background-color: #0000001a;
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
+}
+
+.container .todo-list li {
+  background: #a2a2a233;
+  list-style: none;
+  padding: 15px;
+  margin: 0.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .todo-list li .todo-text {
+  cursor: pointer;
+}
+
+.container .todo-list li .todo-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .todo-list li i {
+  padding: 10px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 30px 0;
+}
+
+.container form label {
+  text-align: center;
+  padding: 10px;
+}
+
+.container form .input {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container form .input input {
+  width: 100%;
+  border: 1px solid transparent;
+  padding: 15px;
+  background: #00000033;
+  color: white;
+  font-size: 1rem;
+  z-index: 10;
+}
+
+.container form .input input:focus {
+  outline: none !important;
+}
+
+.container form .input button {
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 15px;
+  background: #00000033;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  color: white;
+}
+
+.container form .input button:focus {
+  outline: none !important;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.todo-done {
+  background-color: #a8ff9c33 !important;
+}
+/*# sourceMappingURL=style.css.map */
