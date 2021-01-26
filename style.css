@@ -3,11 +3,16 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-  letter-spacing: 1px;
 }
 
 body {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("bg-image.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bg-image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,35 +22,45 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 90%;
-  margin: auto;
   color: #fff;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("bg-image.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bg-image.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 600px) {
+  body {
+    font-size: 1rem;
+    padding: 2rem;
+  }
 }
 
 h1 {
+  margin: 2rem 0;
   text-align: center;
-  margin: 30px 0;
-  font-size: 2.5rem;
 }
 
 .container {
-  padding: 2rem;
-  width: 700px;
+  padding: 1rem;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
   background-color: #0000001a;
   -webkit-backdrop-filter: blur(1rem);
           backdrop-filter: blur(1rem);
 }
 
+@media (min-width: 600px) {
+  .container {
+    padding: 2rem;
+  }
+}
+
 .container .todo-list li {
   background: #a2a2a233;
   list-style: none;
-  padding: 15px;
+  min-height: 3rem;
   margin: 0.5rem 0;
+  padding: 0 0 0 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,6 +70,12 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (min-width: 600px) {
+  .container .todo-list li {
+    min-height: 4rem;
+  }
 }
 
 .container .todo-list li .todo-text {
@@ -71,11 +92,11 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: 0.5rem;
 }
 
 .container .todo-list li i {
-  padding: 10px;
-  margin-left: 5px;
+  padding: 0.5rem;
   cursor: pointer;
 }
 
@@ -87,12 +108,12 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 30px 0;
+  margin: 2rem 0;
 }
 
 .container form label {
   text-align: center;
-  padding: 10px;
+  margin-bottom: 0.5rem;
 }
 
 .container form .input {
@@ -109,11 +130,18 @@ h1 {
 .container form .input input {
   width: 100%;
   border: 1px solid transparent;
-  padding: 15px;
+  min-height: 3rem;
   background: #00000033;
   color: white;
   font-size: 1rem;
   z-index: 10;
+  padding: 1rem;
+}
+
+@media (min-width: 600px) {
+  .container form .input input {
+    min-height: 4rem;
+  }
 }
 
 .container form .input input:focus {
@@ -123,7 +151,7 @@ h1 {
 .container form .input button {
   cursor: pointer;
   font-size: 1rem;
-  padding: 15px;
+  padding: 1rem;
   background: #00000033;
   display: -webkit-box;
   display: -ms-flexbox;
