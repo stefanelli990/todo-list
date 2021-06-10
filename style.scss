@@ -15,10 +15,7 @@ html {
 }
 
 body {
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('bg-image.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: #006981;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 1px;
     display: flex;
@@ -41,7 +38,7 @@ h1 {
     width: 100%;
     margin: 0 auto;
     background-color:#0000001a;
-    backdrop-filter: blur(1rem);
+  
     @include sm {
         padding: 2rem;
     }

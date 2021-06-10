@@ -16,11 +16,7 @@ html {
 }
 
 body {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("bg-image.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bg-image.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: #006981;
   font-family: 'Roboto', sans-serif;
   letter-spacing: 1px;
   display: -webkit-box;
@@ -47,8 +43,6 @@ h1 {
   width: 100%;
   margin: 0 auto;
   background-color: #0000001a;
-  -webkit-backdrop-filter: blur(1rem);
-          backdrop-filter: blur(1rem);
 }
 
 @media (min-width: 600px) {
